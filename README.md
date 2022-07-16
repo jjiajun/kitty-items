@@ -4,7 +4,7 @@
     </a>
 </p>
 
-👋 Welcome! This demo app is designed to help you learn to build on Flow.
+👋 Welcome! This demo app is designed to help you learn to build on Flow. Edited!
 
 - Kitty Items: CryptoKitties Sample App is a **complete NFT marketplace** built with [Cadence](https://docs.onflow.org/cadence), Flow's resource-oriented smart contract programming language.
 - Learn how to deploy contracts, mint NFTs, and integrate user wallets with the Flow Client Library (FCL).
