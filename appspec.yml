@@ -93,22 +93,22 @@ hooks:
     - location: scripts/start_server
       timeout: 300
       runas: root
-# During the ApplicationStart deployment lifecycle event, run the commands 
-#   in the script specified in "location".
-  ApplicationStart:
-    - location:     
-      timeout: 
-      runas:
-    - location: 
-      timeout:
-      runas:
-# During the ValidateService deployment lifecycle event, run the commands 
-#   in the script specified in "location".
-  ValidateService:
-    - location:     
-      timeout: 
-      runas:
-    - location: 
-      timeout:
-      runas:
+# # During the ApplicationStart deployment lifecycle event, run the commands 
+# #   in the script specified in "location".
+#   ApplicationStart:
+#     - location:     
+#       timeout: 
+#       runas:
+#     - location: 
+#       timeout:
+#       runas:
+# # During the ValidateService deployment lifecycle event, run the commands 
+# #   in the script specified in "location".
+#   ValidateService:
+#     - location:     
+#       timeout: 
+#       runas:
+#     - location: 
+#       timeout:
+#       runas:
     
