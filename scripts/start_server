@@ -1,4 +1,4 @@
 #!/bin/bash
 # service httpd start
-
+cd /home/ec2-user/new-kitty-items
 npm run dev:testnet

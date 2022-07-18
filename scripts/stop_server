@@ -3,5 +3,5 @@
 # if [[ -n  $isExistApp ]]; then
 #     service httpd stop        
 # fi
-
+cd /home/ec2-user/new-kitty-items
 npx pm2 delete all
