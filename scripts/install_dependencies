@@ -1,5 +1,5 @@
 #!/bin/bash
-export FOLDER=/home/ec2-user/new-kitty-items
+export FOLDER=home/ec2-user/new-kitty-items
 if [ -d $FOLDER ]
 then 
     cd $FOLDER
