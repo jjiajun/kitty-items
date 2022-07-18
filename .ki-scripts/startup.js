@@ -238,6 +238,9 @@ pm2.connect(false, async function (err) {
       }
     ]);
 
+    console.log(testnet, testnet.account)
+    console.log("RESULT: ", result)
+
     result.account = testnet.account;
 
     jetpack.file(`testnet-credentials-${testnet.account}.json`, {
@@ -397,14 +400,16 @@ pm2.connect(false, async function (err) {
       await bootstrapNewTestnetAccount();
       await deployAndInitialize();
     } else {
-      let useExisting = await inquirer.prompt({
-        type: "confirm",
-        name: "confirm",
-        message: `Use existing tesnet credentials in ${chalk.greenBright(
-          "env.testnet"
-        )} ?`,
-        default: true
-      });
+      // let useExisting = await inquirer.prompt({
+      //   type: "confirm",
+      //   name: "confirm",
+      //   message: `Use existing tesnet credentials in ${chalk.greenBright(
+      //     "env.testnet"
+      //   )} ?`,
+      //   default: true
+      // });
+      let useExisting = {confirm: true};
+      console.log("useExisting", useExisting)
 
       if (!useExisting.confirm) {
         spinner.warn("Creating new testnet account credentials...");
