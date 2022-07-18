@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /new-kitty-items
+    destination: /home/ec2-user/new-kitty-items
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
