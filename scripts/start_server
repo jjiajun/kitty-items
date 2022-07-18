@@ -1,5 +1,8 @@
 #!/bin/bash
 # service httpd start
+logthis() {
+    echo "Running start_server script"
+} 
 pwd
 cd home/ec2-user/new-kitty-items
 npm run dev:testnet
