@@ -2,10 +2,10 @@
 export FOLDER=home/ec2-user/new-kitty-items
 if [ -d $FOLDER ]
 then 
-    rm -rf $FOLDER
+    sudo rm -rf $FOLDER
 fi
-    mkdir -p $FOLDER
-    cd $FOLDER
+mkdir -p $FOLDER
+cd $FOLDER
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 . ~/.nvm/nvm.sh
