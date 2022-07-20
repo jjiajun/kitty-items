@@ -1,12 +1,11 @@
 #!/bin/bash
+mkdir -p helloThisIsATest
 export FOLDER=home/ec2-user/new-kitty-items
 if [ -d $FOLDER ]
 then 
     sudo rm -rf $FOLDER
-    sudo rm -rf $FOLDERx
 fi
-ls
-npm Codethatwillbreak
+
 mkdir -p $FOLDER
 cd $FOLDER
 
