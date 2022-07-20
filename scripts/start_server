@@ -10,14 +10,14 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
-# install flow cli
-sh -ci "$(curl -fsSL https://storage.googleapis.com/flow-cli/install.sh)"
+# # install flow cli
+# sh -ci "$(curl -fsSL https://storage.googleapis.com/flow-cli/install.sh)"
 
 # Some linux distributions install nodejs not as "node" executable but as "nodejs".
 # In this case you have to manually link to "node" as many packages are programmed after the "node" binary. 
 # Something similar also occurs with "python2" not linked to "python".
 # In this case you can do an easy symlink. For linux distributions which install package binaries to /usr/bin you can do: 
-ln -s /usr/bin/nodejs /usr/bin/node
+# ln -s /usr/bin/nodejs /usr/bin/node
 
 npm install
 npm run dev:testnet
