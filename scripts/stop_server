@@ -3,6 +3,6 @@
 # if [[ -n  $isExistApp ]]; then
 #     service httpd stop        
 # fi
-echo "Running stop_server script"
-cd home/ec2-user/new-kitty-items
-/usr/local/bin/npx pm2 delete all
+# export FOLDER=/../../home/ec2-user/new-kitty-items
+# cd $FOLDER
+# /usr/local/bin/npx pm2 delete all
