@@ -131,7 +131,11 @@ function stopProcess(name, port) {
   return new Promise((resolve, reject) => {
     pm2.stop(name, function (err, result) {
       pm2.delete(name, async function () {
-        await killPortProcess(port);
+        try {
+          await killPortProcess(port);
+        } catch (err) {
+          console.log(err)
+        }
         resolve();
       });
     });
