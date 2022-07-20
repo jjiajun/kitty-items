@@ -1,9 +1,7 @@
 #!/bin/bash
 # service httpd start
-echo "This is the start"
-pwd
-cd home/ec2-user/new-kitty-items
-pwd
+export FOLDER=/../../home/ec2-user/new-kitty-items
+cd $FOLDER
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 . ~/.nvm/nvm.sh
@@ -19,3 +17,4 @@ ln -s /usr/bin/nodejs /usr/bin/node
 
 npm install
 npm run dev:testnet
+
