@@ -1,7 +1,5 @@
 #!/bin/bash
 # service httpd start
-export FOLDER=/../../home/ec2-user/new-kitty-items
-cd $FOLDER
 
 
 # Some linux distributions install nodejs not as "node" executable but as "nodejs".
@@ -36,6 +34,10 @@ sh -ci "$(curl -fsSL https://storage.googleapis.com/flow-cli/install.sh)"
 echo "END OF FLOW INSTALLATION"
 pwd
 ls
+# export FOLDER=/../../home/ec2-user/new-kitty-items
+# cd $FOLDER
+# pwd 
+# ls
 
 # GIT PULL HERE
 git pull
