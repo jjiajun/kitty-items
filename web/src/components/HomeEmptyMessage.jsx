@@ -21,19 +21,18 @@ export default function HomeEmptyMessage() {
         <div className="bg-white border border-gray-200 p-6 rounded-md inline-flex flex-col justify-center">
           <b>Your marketplace is currently empty.</b>
           <p className="text-gray-light mb-5 mt-1">
-            Get started by minting your first kitty item!
+            Get started by minting your first NFT!
           </p>
 
           <Button onClick={switchToAdminView}>
-            MINT YOUR FIRST KITTY ITEM
+            MINT YOUR FIRST NFT
           </Button>
 
           <hr className="mt-8 mb-6" />
 
           <b>Learn more about Kitty Items</b>
           <p className="text-gray-light mb-5 mt-1 max-w-xs mx-auto">
-            Learn more about the key components and services that make Kitty
-            Items possible.
+            Learn more about the key components and services that make Puddle possible.
           </p>
 
           <ButtonLink href={paths.githubRepo} target="_blank" color="outline">
