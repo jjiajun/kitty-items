@@ -1,5 +1,5 @@
 # #!/bin/bash
-export FOLDER=/../../home/ec2-user/kitty-items
+export FOLDER=/../../home/ec2-user
 
 # # if folder exists, delete folder
 # if [ -d $FOLDER ]
@@ -7,9 +7,9 @@ export FOLDER=/../../home/ec2-user/kitty-items
 #     sudo rm -rf $FOLDER
 # fi
 
-# create new folder
-mkdir -p $FOLDER
-cd $FOLDER
+# # create new folder
+# mkdir -p $FOLDER
+# cd $FOLDER
 
 # install node
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
@@ -21,3 +21,6 @@ nvm install --lts
 
 # install flow cli
 sh -ci "$(curl -fsSL https://storage.googleapis.com/flow-cli/install.sh)"
+
+# git clone repo
+git clone https://github.com/jjiajun/kitty-items.git kitty-items-git-cloned
