@@ -13,6 +13,7 @@ ls
 
 
 # INSTALL GIT
+echo "INSTALLING GIT"
 #Perform a quick update on your instance:
 sudo yum update -y
  
@@ -21,22 +22,28 @@ sudo yum install git -y
  
 #Check git version
 git version
-
+echo "END OF GIT INSTALLATION"
 
 # INSTALL NODEJS
+echo "INSTALLING NODEJS"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 . ~/.nvm/nvm.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 nvm install --lts
+echo "END OF NODEJS INSTALLATION"
 
 
 # INSTALL FLOW CLI
+echo "INSTALLING FLOW"
 sh -ci "$(curl -fsSL https://storage.googleapis.com/flow-cli/install.sh)"
 echo "END OF FLOW INSTALLATION"
-pwd
-ls
+
+
+# CHANGE OWNER TO EC2 CODEDEPLOY AGENT
+chown -R <current_user> <repo_folder>
+# END OF OWNERSHIP CHANGE
 
 
 # GIT PULL HERE
