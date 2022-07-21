@@ -57,5 +57,5 @@ echo "END OF GIT PULL"
 # cd ..
 # npm install
 
-npm run update:testnet
+npm run dev:testnet
 
