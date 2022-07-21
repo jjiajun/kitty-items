@@ -30,7 +30,7 @@ export default function HomeEmptyMessage() {
 
           <hr className="mt-8 mb-6" />
 
-          <b>Learn more about Kitty Items</b>
+          <b>Learn more about Puddle</b>
           <p className="text-gray-light mb-5 mt-1 max-w-xs mx-auto">
             Learn more about the key components and services that make Puddle possible.
           </p>
