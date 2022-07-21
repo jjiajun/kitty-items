@@ -34,6 +34,8 @@ nvm install --lts
 # INSTALL FLOW CLI
 sh -ci "$(curl -fsSL https://storage.googleapis.com/flow-cli/install.sh)"
 echo "END OF FLOW INSTALLATION"
+pwd
+ls
 
 # GIT PULL HERE
 git pull
