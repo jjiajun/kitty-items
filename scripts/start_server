@@ -24,14 +24,11 @@ npm install
 cd ..
 
 
-
 npm install
-
 
 
 # install flow cli
 sh -ci "$(curl -fsSL https://storage.googleapis.com/flow-cli/install.sh)"
-
 
 npm run dev:testnet
 

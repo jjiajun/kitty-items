@@ -242,9 +242,6 @@ pm2.connect(false, async function (err) {
       }
     ]);
 
-    console.log(testnet, testnet.account)
-    console.log("RESULT: ", result)
-
     result.account = testnet.account;
 
     jetpack.file(`testnet-credentials-${testnet.account}.json`, {
