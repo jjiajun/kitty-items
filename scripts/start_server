@@ -39,6 +39,8 @@ echo "END OF NODEJS INSTALLATION"
 echo "INSTALLING FLOW"
 sh -ci "$(curl -fsSL https://storage.googleapis.com/flow-cli/install.sh)"
 echo "END OF FLOW INSTALLATION"
+whoami
+echo whoami
 
 
 # # CHANGE OWNER TO EC2 CODEDEPLOY AGENT
