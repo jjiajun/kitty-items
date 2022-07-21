@@ -1,5 +1,5 @@
 # #!/bin/bash
-# export FOLDER=/../../home/ec2-user/new-kitty-items
+export FOLDER=/../../home/ec2-user/kitty-items
 
 # # if folder exists, delete folder
 # if [ -d $FOLDER ]
@@ -7,17 +7,17 @@
 #     sudo rm -rf $FOLDER
 # fi
 
-# # create new folder
-# mkdir -p $FOLDER
-# cd $FOLDER
+# create new folder
+mkdir -p $FOLDER
+cd $FOLDER
 
-# # install node
-# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-# . ~/.nvm/nvm.sh
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-# nvm install --lts
+# install node
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+. ~/.nvm/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+nvm install --lts
 
-# # install flow cli
-# sh -ci "$(curl -fsSL https://storage.googleapis.com/flow-cli/install.sh)"
+# install flow cli
+sh -ci "$(curl -fsSL https://storage.googleapis.com/flow-cli/install.sh)"
