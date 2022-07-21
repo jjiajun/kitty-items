@@ -3,13 +3,26 @@
 export FOLDER=/../../home/ec2-user/new-kitty-items
 cd $FOLDER
 
+
 # Some linux distributions install nodejs not as "node" executable but as "nodejs".
 # In this case you have to manually link to "node" as many packages are programmed after the "node" binary. 
 # Something similar also occurs with "python2" not linked to "python".
 # In this case you can do an easy symlink. For linux distributions which install package binaries to /usr/bin you can do: 
 # ln -s /usr/bin/nodejs /usr/bin/node
 
-# install node
+
+# INSTALL GIT
+#Perform a quick update on your instance:
+sudo yum update -y
+ 
+#Install git in your EC2 instance
+sudo yum install git -y
+ 
+#Check git version
+git version
+
+
+# INSTALL NODEJS
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 . ~/.nvm/nvm.sh
 export NVM_DIR="$HOME/.nvm"
@@ -17,18 +30,20 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 nvm install --lts
 
+
+# INSTALL FLOW CLI
+sh -ci "$(curl -fsSL https://storage.googleapis.com/flow-cli/install.sh)"
+echo "END OF FLOW INSTALLATION"
+
+# GIT PULL HERE
+git pull
+echo "END OF GIT PULL"
+
 cd web
 sudo rm package-lock.json
 sudo rm -rf node_modules
-npm install
 cd ..
-
-
 npm install
-
-
-# install flow cli
-sh -ci "$(curl -fsSL https://storage.googleapis.com/flow-cli/install.sh)"
 
 npm run dev:testnet
 
