@@ -13,9 +13,9 @@ export default function HomeEmptyMessage() {
           width="100"
           className="mx-auto mt-6 mb-4"
         />
-        <h1 className="text-3xl font-semibold">Welcome to Kitty Items!</h1>
+        <h1 className="text-3xl font-semibold">Welcome to Puddle!</h1>
         <h3 className="text-xl font-semibold mb-6">
-          A CryptoKitties Sample App
+          A Puddle App
         </h3>
 
         <div className="bg-white border border-gray-200 p-6 rounded-md inline-flex flex-col justify-center">
