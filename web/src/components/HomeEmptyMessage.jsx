@@ -15,7 +15,7 @@ export default function HomeEmptyMessage() {
         />
         <h1 className="text-3xl font-semibold">Welcome to Puddle!</h1>
         <h3 className="text-xl font-semibold mb-6">
-          A Puddle App
+          A Puddle App for Dom
         </h3>
 
         <div className="bg-white border border-gray-200 p-6 rounded-md inline-flex flex-col justify-center">
