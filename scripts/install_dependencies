@@ -1,38 +1,38 @@
-# #!/bin/bash
-export FOLDER=/../../home/ec2-user
+# # #!/bin/bash
+# export FOLDER=/../../home/ec2-user
 
-# # if folder exists, delete folder
-# if [ -d $FOLDER ]
-# then 
-#     sudo rm -rf $FOLDER
-# fi
+# # # if folder exists, delete folder
+# # if [ -d $FOLDER ]
+# # then 
+# #     sudo rm -rf $FOLDER
+# # fi
 
-# # create new folder
-# mkdir -p $FOLDER
-# cd $FOLDER
+# # # create new folder
+# # mkdir -p $FOLDER
+# # cd $FOLDER
 
-# INSTALL GIT
-echo "INSTALLING GIT"
-#Perform a quick update on your instance:
-sudo yum update -y
+# # INSTALL GIT
+# echo "INSTALLING GIT"
+# #Perform a quick update on your instance:
+# sudo yum update -y
  
-#Install git in your EC2 instance
-sudo yum install git -y
- 
-#Check git version
-git version
-echo "END OF GIT INSTALLATION"
+# #Install git in your EC2 instance
+# sudo yum install git -y
 
-# install node
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-. ~/.nvm/nvm.sh
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-nvm install --lts
+# #Check git version
+# git version
+# echo "END OF GIT INSTALLATION"
 
-# install flow cli
-sh -ci "$(curl -fsSL https://storage.googleapis.com/flow-cli/install.sh)"
+# # install node
+# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+# . ~/.nvm/nvm.sh
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+# nvm install --lts
 
-# git clone repo
-git clone https://github.com/jjiajun/kitty-items.git kitty-items-git-cloned
+# # install flow cli
+# sh -ci "$(curl -fsSL https://storage.googleapis.com/flow-cli/install.sh)"
+
+# # git clone repo
+# git clone https://github.com/jjiajun/kitty-items.git kitty-items-git-cloned
