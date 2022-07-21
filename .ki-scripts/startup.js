@@ -502,32 +502,32 @@ pm2.connect(false, async function (err) {
       );
     }
 
-    let logs = await inquirer.prompt({
-      type: "confirm",
-      name: "confirm",
-      message: `Would you like to view the logs for all processes?`,
-      default: true
-    });
+    // let logs = await inquirer.prompt({
+    //   type: "confirm",
+    //   name: "confirm",
+    //   message: `Would you like to view the logs for all processes?`,
+    //   default: true
+    // });
 
-    if (logs.confirm) {
-      console.log("\n");
-      const ps = spawn("npx", ["pm2", "logs", "--no-daemon"], {
-        shell: true,
-        stdio: "inherit"
-      });
-      ps.stdout?.on("data", (data) => {
-        console.log(data.toString().trim());
-      });
-      process.on("SIGINT", () => {
-        process.exit(0);
-      }); // CTRL+C
-    } else {
-      spinner.info(
-        `View log output for all processes: ${chalk.cyanBright(
-          `npx pm2 logs`
-        )}${"\n"}`
-      );
-    }
+    // if (logs.confirm) {
+    //   console.log("\n");
+    //   const ps = spawn("npx", ["pm2", "logs", "--no-daemon"], {
+    //     shell: true,
+    //     stdio: "inherit"
+    //   });
+    //   ps.stdout?.on("data", (data) => {
+    //     console.log(data.toString().trim());
+    //   });
+    //   process.on("SIGINT", () => {
+    //     process.exit(0);
+    //   }); // CTRL+C
+    // } else {
+    //   spinner.info(
+    //     `View log output for all processes: ${chalk.cyanBright(
+    //       `npx pm2 logs`
+    //     )}${"\n"}`
+    //   );
+    // }
     pm2.disconnect();
     spinner.stop();
   }, 3000);
